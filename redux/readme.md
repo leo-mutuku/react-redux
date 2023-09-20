@@ -33,3 +33,13 @@ Responsibilities -
 
 
 
+#Reducers
++ case: FETCH_USERS_REQUEST
+    - loading:true
+
++ case: FETCH_USERS_SUCCESS
+    - loading: false
+    - users:data(from API)
++ case: FETCH_USERS_FAILURE
+    - loading: false
+    - error:error(from API)
